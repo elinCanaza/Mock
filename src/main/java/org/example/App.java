@@ -5,7 +5,12 @@ package org.example;
  *
  */
 public class App {
+
+    public void message(String message){
+        System.out.println("Printing: " + message);
+    }
     public static void main( String[] args ) {
-        System.out.println( "Hello World!" );
+        App app = new App();
+        app.message("Hello from custom function");
     }
 }
